@@ -1,0 +1,29 @@
+{
+  "name": "plugjs-registry",
+  "version": "1.0.1",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node dist/index.js",
+    "dev": "cross-env NODE_ENV=development nodemon src/index.js",
+    "build": "sucrase ./src -d ./dist --transforms imports"
+  },
+  "dependencies": {
+    "amqplib": "^0.5.5",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.0",
+    "death": "^1.1.0",
+    "express": "^4.17.1",
+    "helmet": "^3.21.2",
+    "morgan": "^1.9.1",
+    "plug-server": "^1.0.0",
+    "plugjs-registry": "^1.0.4",
+    "plugjs-server": "^1.1.2",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2",
+    "sucrase": "^3.12.1"
+  }
+}

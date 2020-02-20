@@ -1,0 +1,7 @@
+.vscode/
+
+node_modules/
+dist/
+
+registrymap.json
+yarn.lock
